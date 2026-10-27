@@ -1,347 +1,304 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <meta name="description"
-        content="Professional portfolio in business analytics, data science and finance.">
-
-  <title>Aspiring Data Scientist | Hank Kataria</title>
+  <meta name="description" content="Hank Kataria's portfolio in business analytics, data science, finance, engineering and operational problem-solving.">
+  <meta name="theme-color" content="#142b45">
+  <title>Hank Kataria | Analytics, Data Science & Finance</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
   <header class="site-header">
     <div class="container navigation">
-      <a class="brand" href="#home">Hank Kataria<span>.</span></a>
+      <a class="brand" href="#home" aria-label="Hank Kataria, home">
+        <span class="brand-mark" aria-hidden="true">HK</span>
+        <span class="brand-name">Hank Kataria<span class="brand-period">.</span></span>
+      </a>
 
-      <nav aria-label="Main navigation">
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Open navigation menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="primary-nav" id="primary-nav" aria-label="Main navigation">
         <a href="#about">About</a>
         <a href="#skills">Skills</a>
         <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
+        <a href="#research">Research Papers</a>
+        <a href="#leadership">Leadership &amp; Awards</a>
+        <a href="#contact" class="nav-contact">Contact</a>
       </nav>
     </div>
   </header>
 
   <main>
-    <!-- HERO SECTION -->
+    <!-- HERO: Add your portrait as assets/profile.jpg to replace the placeholder. -->
     <section class="hero" id="home">
       <div class="container hero-grid">
-        <div>
-          <p class="eyebrow">BUSINESS ANALYTICS · DATA SCIENCE · FINANCE</p>
+        <div class="hero-visual" data-reveal>
+          <div class="portrait-frame image-frame">
+            <div class="image-placeholder portrait-placeholder" aria-hidden="true">
+              <span class="placeholder-initials">HK</span>
+              <span class="placeholder-title">Add your portrait</span>
+              <span class="placeholder-help">Save your photo as assets/profile.jpg</span>
+            </div>
+            <img class="frame-image" src="assets/profile.jpg" alt="Portrait of Hank Kataria" data-image loading="eager">
+            <div class="portrait-label">
+              <span class="label-dot"></span>
+              <span>Analytics · Finance · Strategy</span>
+            </div>
+          </div>
+          <div class="portrait-note">Curious by nature. Structured in approach.</div>
+        </div>
 
-          <h1>Turning data into
-            <span>better decisions.</span>
-          </h1>
-
+        <div class="hero-copy" data-reveal>
+          <p class="eyebrow">BUSINESS ANALYTICS / DATA SCIENCE / FINANCE</p>
+          <h1>Connecting business questions with <span>data-driven decisions.</span></h1>
           <p class="hero-description">
-            Welcome to my professional portfolio. I explore business
-            problems through data analysis, visualization, statistical
-            methods and financial reasoning to develop actionable insights. 
-            I am an Analytics professional with an MBA in Finance and Business Analytics and a multidisciplinary background spanning 
-            business systems analysis, data analytics, engineering, project management, and process improvement. Throughout my career, 
-            I have worked at the intersection of business and technology, analysing complex processes, translating business requirements into actionable solutions, 
-            and using data to support better decision-making. I work with cross-functional teams to identify process inefficiencies, manage project requirements, 
-            improve reporting, mitigate risks, and implement solutions aligned with organisational objectives.
-
-            My analytical toolkit includes SQL, Python, R, Power BI, Tableau, and advanced Excel, with experience in data analysis, statistical analysis, business intelligence, 
-            forecasting, financial modelling, and data visualisation. I am particularly interested in using data to uncover meaningful insights, identify opportunities for improvement, 
-            and translate complex information into clear recommendations for business stakeholders.
-
-            My MBA specialisation in Finance and Business Analytics has further expanded my interests into financial analytics, corporate finance, investment analysis, 
-            capital markets, fixed income, portfolio management, risk analytics, product analytics, and business intelligence. 
-            I enjoy applying analytical and quantitative thinking to complex business problems and understanding how data can drive strategy and measurable outcomes.
-
-            My professional experience across organisations such as General Dynamics Land Systems, Toyota Motor North America, and Bend-All Automotive has strengthened my ability to work in complex, 
-            cross-functional environments. These experiences have developed my skills in requirements analysis, systems thinking, project management, process optimisation, stakeholder communication, and 
-            data-driven problem-solving. I am a curious, analytical, and continuous learner who enjoys working on challenging problems where data, technology, and 
-            business strategy intersect. I am particularly interested in opportunities in: Data & Business  Analytics, Business Intelligence & Data Visualization, 
-            Business Systems Analysis,  Financial & Risk Analytics, Capital Markets & Investment Analytics, Product & Customer Analytics, Strategy & Consulting.
-
-            If you are looking for someone who can bridge business needs with technical and analytical solutions, 
-            I would be happy to connect and explore how my background could contribute to your team's goals.
-
+            I combine an engineering foundation with MBA training in Finance and Business Analytics to examine problems from operational, commercial and financial perspectives. My focus is turning complex questions into structured analysis, clear insights and practical recommendations.
           </p>
-
-          <div class="hero-buttons">
-            <a class="button button-primary" href="#projects">
-              Explore Projects
-            </a>
-
-            <a class="button button-outline" href="Resume.pdf"
-               target="_blank" rel="noopener">
-              View My Résumé
-            </a>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#projects">Explore Projects <span aria-hidden="true">↗</span></a>
+            <a class="button button-secondary" href="resume.pdf" target="_blank" rel="noopener">View My Résumé <span aria-hidden="true">↗</span></a>
           </div>
+          <div class="hero-facts" aria-label="Professional focus">
+            <div class="hero-fact">
+              <span class="fact-number">01</span>
+              <span>Analytical problem-solving</span>
+            </div>
+            <div class="hero-fact">
+              <span class="fact-number">02</span>
+              <span>Business and financial context</span>
+            </div>
+            <div class="hero-fact">
+              <span class="fact-number">03</span>
+              <span>Clear, actionable communication</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-orb hero-orb-one" aria-hidden="true"></div>
+      <div class="hero-orb hero-orb-two" aria-hidden="true"></div>
+    </section>
 
-          <p class="small-note">
-            I hold an MBA specializing in Finance and Business Analytics from the University of California, Riverside, and a BTech in Mechanical Engineering from McMaster University. 
-            My professional experience spans engineering, automotive manufacturing, technical program delivery, and investment analysis, 
-            with strengths in analytical problem-solving, financial analysis, root-cause investigation, and cross-functional collaboration. 
-            Proficient in tools including SQL, R, Python, Excel, Power BI, and Tableau. 
-            I aspire to transition into data science and advanced analytics, applying statistical analysis, predictive modelling, 
-            and machine learning to solve business and financial problems, generate actionable insights, and support data-driven decision-making.
-          </p>
+    <!-- ABOUT -->
+    <section class="section" id="about" data-reveal>
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">ABOUT ME</p>
+          <h2>An engineering mindset, strengthened by business and finance.</h2>
+        </div>
+        <div class="about-grid">
+          <div class="about-copy">
+            <p>
+              My career began in engineering and program delivery, with experience across automotive manufacturing and defence systems. Working with technical, supplier and business teams taught me to structure ambiguous problems, coordinate requirements and timelines, investigate root causes, and communicate trade-offs.
+            </p>
+            <p>
+              An MBA focused on Finance and Business Analytics broadened that foundation into financial analysis, business intelligence and quantitative methods. I am now building toward analytics and data science roles where I can combine domain context, statistical thinking and clear communication to help teams evaluate performance, understand risk and make better decisions.
+            </p>
+          </div>
+          <aside class="about-aside">
+            <p class="aside-kicker">THE THREAD THROUGH MY WORK</p>
+            <div class="value-item">
+              <span class="value-icon" aria-hidden="true">01</span>
+              <div><h3>Make complexity manageable</h3><p>Break broad problems into measurable questions, assumptions and next steps.</p></div>
+            </div>
+            <div class="value-item">
+              <span class="value-icon" aria-hidden="true">02</span>
+              <div><h3>Connect analysis to context</h3><p>Interpret the numbers in light of operational realities and business objectives.</p></div>
+            </div>
+            <div class="value-item">
+              <span class="value-icon" aria-hidden="true">03</span>
+              <div><h3>Communicate what matters</h3><p>Present findings, limitations and recommendations so others can act on them.</p></div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section section-tinted" id="skills" data-reveal>
+      <div class="container">
+        <div class="section-heading section-heading-row">
+          <div>
+            <p class="eyebrow">CAPABILITIES</p>
+            <h2>Tools and areas of focus</h2>
+          </div>
+          <p class="section-intro">A practical mix of business understanding, analytical methods and data communication.</p>
         </div>
 
-        <aside class="profile-panel">
-          <p class="panel-label">MY ANALYTICAL APPROACH</p>
-
-          <div class="approach-item">
-            <span class="approach-number">01</span>
-            <div>
-              <h3>Understand</h3>
-              <p>Define the problem and identify the relevant data.</p>
-            </div>
-          </div>
-
-          <div class="approach-item">
-            <span class="approach-number">02</span>
-            <div>
-              <h3>Analyze</h3>
-              <p>Explore patterns, test assumptions and evaluate results.</p>
-            </div>
-          </div>
-
-          <div class="approach-item">
-            <span class="approach-number">03</span>
-            <div>
-              <h3>Communicate</h3>
-              <p>Present findings, limitations and recommendations.</p>
-            </div>
-          </div>
-        </aside>
-      </div>
-    </section>
-
-    <!-- ABOUT SECTION -->
-    <section class="section" id="about">
-      <div class="container narrow">
-        <p class="eyebrow">ABOUT ME</p>
-        <h2>Business perspective. Analytical thinking.</h2>
-
-        <p class="section-description">
-          I am interested in applying analytics and quantitative methods
-          to business strategy, operational performance and financial
-          decision-making. This portfolio documents my projects,
-          methodology, findings and continuing technical development.
-        </p>
-
-        <p>
-          I am an aspiring data scientist with an MBA specializing in Finance and Business Analytics from the University of California, Riverside, 
-          and a Bachelor of Technology in Mechanical Engineering from McMaster University. My professional background includes experience in systems engineering, 
-          automotive manufacturing, and technical program delivery at organizations including General Dynamics Land Systems and Toyota Motor North America. 
-          Across these roles, I have developed skills in analytical problem-solving, financial and budget analysis, root-cause investigation, risk assessment, 
-          and cross-functional collaboration. I have also applied financial analysis as a Portfolio Analyst with the Hylander Student Investment Fund at UC Riverside.
-
-          My technical toolkit includes SQL, R, Python, Excel, Power BI, Tableau, and MicroStrategy, complemented by training in business intelligence and cloud infrastructure fundamentals. 
-          I am interested in using data analytics, statistical methods, predictive modelling, and machine learning to solve practical business problems—particularly in finance, investment research, 
-          operational efficiency, and business performance. My goal is to build on my engineering and business experience to develop data-driven insights, evaluate alternatives, 
-          identify patterns and trends, and support better strategic and operational decisions. 
-          I aim to bridge business understanding and technical analysis to turn complex data into actionable insights and measurable business value.
-          
-        </p>
-      </div>
-    </section>
-
-    <!-- SKILLS SECTION -->
-    <section class="section section-muted" id="skills">
-      <div class="container">
-        <p class="eyebrow">CAPABILITIES</p>
-        <h2>Areas of focus</h2>
-
-        <div class="skill-grid">
-          <article class="skill-card">
+        <div class="skills-grid">
+          <article class="skill-card" data-reveal>
+            <div class="card-index">01</div>
             <h3>Business Analytics</h3>
-            <p>
-              KPI reporting, data cleaning, exploratory analysis,
-              performance measurement and dashboard development.
-            </p>
-            <div class="tags">
-              <span>Excel</span>
-              <span>Power BI</span>
-              <span>Tableau</span>
-            </div>
+            <p>Performance measurement, KPI reporting, exploratory analysis, data visualization and decision support.</p>
+            <div class="tags"><span>Excel</span><span>Power BI</span><span>Tableau</span><span>SQL</span></div>
           </article>
-
-          <article class="skill-card">
-            <h3>Data Science</h3>
-            <p>
-              Statistical analysis, hypothesis testing, segmentation,
-              predictive modelling and model evaluation.
-            </p>
-            <div class="tags">
-              <span>R</span>
-              <span>Python</span>
-              <span>SQL</span>
-            </div>
+          <article class="skill-card" data-reveal>
+            <div class="card-index">02</div>
+            <h3>Data Science &amp; Statistics</h3>
+            <p>Data preparation, statistical testing, regression, segmentation, predictive modelling and model interpretation.</p>
+            <div class="tags"><span>R</span><span>Python</span><span>SQL</span><span>Statistics</span></div>
           </article>
-
-          <article class="skill-card">
-            <h3>Finance</h3>
-            <p>
-              Financial analysis, investment returns, risk measurement,
-              asset allocation and evidence-based decision-making.
-            </p>
-            <div class="tags">
-              <span>Excel</span>
-              <span>Risk Analysis</span>
-              <span>Statistics</span>
-            </div>
+          <article class="skill-card" data-reveal>
+            <div class="card-index">03</div>
+            <h3>Finance &amp; Risk</h3>
+            <p>Financial modelling, valuation, investment research, risk analysis and evidence-based comparison of alternatives.</p>
+            <div class="tags"><span>Excel</span><span>DCF</span><span>Risk Analysis</span><span>Markets</span></div>
+          </article>
+          <article class="skill-card" data-reveal>
+            <div class="card-index">04</div>
+            <h3>Operations &amp; Delivery</h3>
+            <p>Requirements analysis, project coordination, root-cause investigation, process improvement and cross-functional execution.</p>
+            <div class="tags"><span>Requirements</span><span>Process Analysis</span><span>Risk</span><span>Planning</span></div>
           </article>
         </div>
-
-        <p class="small-note">
-          Only list tools, methods and capabilities that you can
-          demonstrate. Adjust these categories to reflect your skills.
-        </p>
+        <p class="small-note">This list is intended to reflect methods and tools I can discuss and demonstrate. It can be refined as my portfolio develops.</p>
       </div>
     </section>
 
-    <!-- PROJECT PORTFOLIO -->
-    <section class="section" id="projects">
+    <!-- PROJECTS: Replace example descriptions and report paths with your actual completed work. -->
+    <section class="section" id="projects" data-reveal>
       <div class="container">
-        <p class="eyebrow">SELECTED WORK</p>
-        <h2>Projects & research</h2>
-
-        <p class="section-description">
-          Each project should explain the problem, data, methodology,
-          findings, limitations and practical implications.
-        </p>
-
-        <div class="project-grid">
-
-          <article class="project-card">
-            <div class="project-top">
-              <span class="project-category">01 / BUSINESS ANALYTICS</span>
-              <span class="project-symbol">BA</span>
-            </div>
-
-            <h3>Sales Performance Dashboard</h3>
-
-            <p>
-              An example project examining sales trends, product
-              performance, customer segments and business KPIs.
-              Present the dashboard findings and resulting recommendations.
-            </p>
-
-            <div class="tags">
-              <span>Dashboard</span>
-              <span>KPI Analysis</span>
-              <span>Visualization</span>
-            </div>
-
-            <a class="text-link"
-               href="project-files/Energy drink_Marketing Research_Projecting sales, forecasting trends and recommendations FINAL.pdf">
-              View Project Report ↗
-            </a>
-
-            <a class="text-link"
-               href="https://github.com/hankkataria/Energy drink sals forecastinga nd research">
-              View Source Code ↗
-            </a>
-          </article>
-
-          <article class="project-card">
-            <div class="project-top">
-              <span class="project-category">02 / DATA SCIENCE</span>
-              <span class="project-symbol">DS</span>
-            </div>
-
-            <h3>Customer Segmentation</h3>
-
-            <p>
-              An example project using exploratory analysis and
-              clustering to identify customer groups, interpret
-              their characteristics and assess potential applications.
-            </p>
-
-            <div class="tags">
-              <span>Statistics</span>
-              <span>Clustering</span>
-              <span>R / Python</span>
-            </div>
-
-            <a class="text-link"
-               href="project-files/CocaCola_Thesis_Report_rev02_FINAL_SUBMITTED.pdf">
-              View Project Report ↗
-            </a>
-
-            <a class="text-link"
-               href="https://github.com/hankkataria/CocaCola_Analysis">
-              View Source Code ↗
-            </a>
-          </article>
-
-          <article class="project-card">
-            <div class="project-top">
-              <span class="project-category">03 / FINANCE</span>
-              <span class="project-symbol">FI</span>
-            </div>
-
-            <h3>Portfolio Risk Analysis</h3>
-
-            <p>
-              An example financial analysis of multiple NYSE stocks, comparing investment
-              returns, volatility, correlations and diversification
-              across alternative portfolio allocations.
-            </p>
-
-            <div class="tags">
-              <span>Returns</span>
-              <span>Risk</span>
-              <span>Asset Allocation</span>
-            </div>
-
-            <a class="text-link"
-               href="project-files/MGT295F Group Project_Report_FINAL.pdf">
-              View Project Report ↗
-            </a>
-
-            <a class="text-link"
-               href="https://github.com/hankkataria/Empirical Analysis of Global Equity and Currency Markets">
-              View Source Code ↗
-            </a>
-          </article>
-
+        <div class="section-heading section-heading-row">
+          <div>
+            <p class="eyebrow">SELECTED WORK</p>
+            <h2>Projects</h2>
+          </div>
+          <p class="section-intro">Examples of how I approach business questions through data, financial analysis and structured problem-solving.</p>
         </div>
 
-        <p class="small-note">
-          These are starter examples, not claims of completed work.
-          Replace the project descriptions and links with your own
-          work, reports and repositories.
-        </p>
+        <div class="projects-grid">
+          <article class="project-card project-featured" data-reveal>
+            <div class="project-card-top"><span class="project-category">FINANCE / VALUATION</span><span class="project-number">01</span></div>
+            <div class="project-visual visual-finance" aria-hidden="true"><span class="visual-line line-one"></span><span class="visual-line line-two"></span><span class="visual-line line-three"></span><span class="visual-caption">VALUATION MODEL</span></div>
+            <div class="project-card-body">
+              <h3>Discounted Cash Flow Valuation</h3>
+              <p>A five-year DCF analysis connecting forecast assumptions, projected cash flows, terminal value and valuation sensitivity for a publicly traded energy company.</p>
+              <div class="tags"><span>Financial Modelling</span><span>DCF</span><span>Scenario Analysis</span></div>
+              <a class="text-link" href="project-files/NFG_DCF_Stock_Pitch_Analysis.pdf">View project report <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+
+          <article class="project-card" data-reveal>
+            <div class="project-card-top"><span class="project-category">BUSINESS ANALYTICS</span><span class="project-number">02</span></div>
+            <div class="project-visual visual-analytics" aria-hidden="true"><span class="bar bar-one"></span><span class="bar bar-two"></span><span class="bar bar-three"></span><span class="bar bar-four"></span><span class="visual-caption">PERFORMANCE INSIGHTS</span></div>
+            <div class="project-card-body">
+              <h3>Business Performance &amp; Consumer Insights</h3>
+              <p>Use this entry for a completed dashboard or consumer analytics project. Explain the business question, data used, key comparisons and the decisions the findings can inform.</p>
+              <div class="tags"><span>Dashboarding</span><span>KPI Analysis</span><span>Visualization</span></div>
+              <a class="text-link" href="project-files/business-analytics-report.pdf">View project report <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+
+          <article class="project-card" data-reveal>
+            <div class="project-card-top"><span class="project-category">DATA SCIENCE</span><span class="project-number">03</span></div>
+            <div class="project-visual visual-data" aria-hidden="true"><span class="data-node node-one"></span><span class="data-node node-two"></span><span class="data-node node-three"></span><span class="data-node node-four"></span><span class="data-node node-five"></span><span class="visual-caption">MODELLING &amp; INTERPRETATION</span></div>
+            <div class="project-card-body">
+              <h3>Statistical Modelling &amp; Segmentation</h3>
+              <p>Use this entry for an applied modelling project, documenting data preparation, method selection, evaluation, interpretation and limitations.</p>
+              <div class="tags"><span>R / Python</span><span>Statistics</span><span>Model Evaluation</span></div>
+              <a class="text-link" href="project-files/data-science-report.pdf">View project report <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+        </div>
+        <p class="small-note">Before publishing, replace the two guidance descriptions with summaries of completed projects and upload each report using the linked filename, or update the link to match your file.</p>
       </div>
     </section>
 
-    <!-- CONTACT SECTION -->
-    <section class="section contact-section" id="contact">
-      <div class="container narrow">
-        <p class="eyebrow">GET IN TOUCH</p>
-        <h2>Let's connect.</h2>
+    <!-- RESEARCH PAPERS -->
+    <section class="section section-tinted" id="research" data-reveal>
+      <div class="container">
+        <div class="section-heading section-heading-row">
+          <div>
+            <p class="eyebrow">RESEARCH &amp; WRITING</p>
+            <h2>Research Papers</h2>
+          </div>
+          <p class="section-intro">A home for research papers, independent analysis, working papers and technical notes.</p>
+        </div>
 
-        <p class="section-description">
-          For professional opportunities, project discussions and
-          collaboration, please use the contact details below.
-        </p>
+        <div class="research-layout">
+          <div class="research-intro-card">
+            <span class="research-mark" aria-hidden="true">R<span>/</span></span>
+            <h3>Evidence, method and interpretation.</h3>
+  
+          <article class="research-card" data-reveal>
+            <div class="research-card-label"><span class="status-dot"></span> STARTER TEMPLATE</div>
+            <h3>Add your first research paper</h3>
+            <p>Coca-Cola’s Digital Pulse: Harnessing Social Media Sentiment for Strategic Brand Management </p>
+            <p class="research-meta">Author(s) · 2025 · Publication or Context: This report integrates sentiment analytics, revenue modelling, STP segmentation, principal‑component clustering,  
+              and cross‑brand diagnostics to benchmark the competitive standing of Coca‑Cola and PepsiCo beverage portfolios.</p>
+            <a class="text-link" href="project-files/CocaCola_Thesis_Report_rev02_FINAL_SUBMITTED.pdf">Read paper PDF <span aria-hidden="true">↗</span></a>
+          </article>
+        </div>
+        <!-- To add another paper, duplicate the research-card article and update its title, abstract, metadata and PDF link. -->
+      </div>
+    </section>
 
-        <div class="contact-links">
-          <a href="mailto: hank.kataria@gmail.com">
-            Email Me
-          </a>
+    <!-- LEADERSHIP AND AWARDS: Add images under assets/ using the filenames shown below. -->
+    <section class="section" id="leadership" data-reveal>
+      <div class="container">
+        <div class="section-heading section-heading-row">
+          <div>
+            <p class="eyebrow">LEADERSHIP &amp; RECOGNITION</p>
+            <h2>Leadership &amp; Awards</h2>
+          </div>
+          <p class="section-intro">Experiences and recognition that add context to my professional development beyond technical work.</p>
+        </div>
 
-          <a href="https://www.linkedin.com/in/hankkataria/"
-             target="_blank" rel="noopener">
-            LinkedIn ↗
-          </a>
+        <div class="leadership-grid">
+          <article class="leadership-card" data-reveal>
+            <div class="leadership-image image-frame">
+              <div class="image-placeholder landscape-placeholder" aria-hidden="true">
+                <span class="photo-placeholder-icon">01</span>
+                <span class="placeholder-title">Add a leadership photo</span>
+                <span class="placeholder-help">assets/hylander-fund.jpg</span>
+              </div>
+              <img class="frame-image" src="assets/hylander-fund.jpg" alt="Photo related to the Hylander Student Investment Fund" data-image loading="lazy">
+            </div>
+            <div class="leadership-copy">
+              <p class="eyebrow">INVESTMENT &amp; CAMPUS INVOLVEMENT</p>
+              <h3>Energy Sector: Portfolio Analyst — Hylander Student Investment Fund</h3>
+              <p>As a portfolio analyst at HSIF at the University of California, Riverside, I applied financial analysis and investment research in a student fund setting to make a stock pitch.  
+                </p>
+            </div>
+          </article>
 
-          <a href="https://github.com/hankkataria"
-             target="_blank" rel="noopener">
-            GitHub ↗
-          </a>
+          <article class="leadership-card" data-reveal>
+            <div class="leadership-image image-frame">
+              <div class="image-placeholder landscape-placeholder" aria-hidden="true">
+                <span class="photo-placeholder-icon">02</span>
+                <span class="placeholder-title">Director, Student Career Advisory Council, University of California, Riverside 
+                As a director of the student advisory council, I hosted career fairs, networking events, company information sessions and guest speakers 
+                  for career and professional development of business students.</span>
+                <span class="placeholder-help">assets/award.jpg</span>
+              </div>
+              <img class="frame-image" src="assets/award.jpg" alt="Photo of an award, certificate or recognition" data-image loading="lazy">
+            </div>
+            <div class="leadership-copy">
+              <p class="eyebrow">AWARDS &amp; RECOGNITION</p>
+              <h3>Add an award or recognition</h3>
+              <p>Document a verified award, fellowship, scholarship or academic distinction. Include the issuing organization, date and what the recognition acknowledged.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact-section" id="contact" data-reveal>
+      <div class="container contact-grid">
+        <div>
+          <p class="eyebrow">LET'S CONNECT</p>
+          <h2>Good analysis starts with a useful question.</h2>
+          <p>For analytics opportunities, research discussions or professional collaboration, please get in touch.</p>
+        </div>
+        <div class="contact-actions">
+          <!-- Replace the email and LinkedIn URL below with your own details. -->
+          <a class="button button-light" href="mailto:hank.kataria@gmail.com">Email me <span aria-hidden="true">↗</span></a>
+          <a class="contact-inline-link" href="https://www.linkedin.com/in/hankkataria/" target="_blank" rel="noopener">Connect on LinkedIn <span aria-hidden="true">↗</span></a>
+          <a class="contact-inline-link" href="https://github.com/hankkataria" target="_blank" rel="noopener">Explore my GitHub <span aria-hidden="true">↗</span></a>
         </div>
       </div>
     </section>
@@ -349,9 +306,67 @@
 
   <footer class="site-footer">
     <div class="container footer-content">
-      <p>© <span id="year">2026</span> Hank Kataria</p>
+      <a class="footer-brand" href="#home">Hank Kataria<span>.</span></a>
       <p>Business Analytics · Data Science · Finance</p>
+      <p>© <span id="current-year">2026</span> Hank Kataria</p>
     </div>
   </footer>
+
+  <script>
+    // Mobile navigation menu.
+    const menuToggle = document.querySelector('.menu-toggle');
+    const primaryNav = document.querySelector('#primary-nav');
+
+    if (menuToggle && primaryNav) {
+      menuToggle.addEventListener('click', () => {
+        const isOpen = menuToggle.getAttribute('aria-expanded') === 'true';
+        menuToggle.setAttribute('aria-expanded', String(!isOpen));
+        menuToggle.setAttribute('aria-label', isOpen ? 'Open navigation menu' : 'Close navigation menu');
+        primaryNav.classList.toggle('is-open', !isOpen);
+      });
+
+      primaryNav.querySelectorAll('a').forEach((link) => {
+        link.addEventListener('click', () => {
+          menuToggle.setAttribute('aria-expanded', 'false');
+          menuToggle.setAttribute('aria-label', 'Open navigation menu');
+          primaryNav.classList.remove('is-open');
+        });
+      });
+    }
+
+    // Show uploaded photos; otherwise keep the styled placeholder visible.
+    document.querySelectorAll('[data-image]').forEach((img) => {
+      const markImageLoaded = () => {
+        if (img.naturalWidth > 0) {
+          img.closest('.image-frame')?.classList.add('has-image');
+        }
+      };
+      img.addEventListener('load', markImageLoaded);
+      if (img.complete) markImageLoaded();
+    });
+
+    // Subtle scroll-in reveals. Content remains visible if the browser lacks support.
+    const revealItems = document.querySelectorAll('[data-reveal]');
+    if ('IntersectionObserver' in window && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      const revealObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('is-visible');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.12 });
+      revealItems.forEach((item) => {
+        item.classList.add('reveal-ready');
+        revealObserver.observe(item);
+      });
+    } else {
+      revealItems.forEach((item) => item.classList.add('is-visible'));
+    }
+
+    // Keep the footer year current.
+    const year = document.querySelector('#current-year');
+    if (year) year.textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
